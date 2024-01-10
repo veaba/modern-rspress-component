@@ -1,0 +1,8 @@
+/* base 和 components 是可选的，请酌情添加 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: green !important;
+}
