@@ -5,6 +5,11 @@ import { modulePluginDoc } from '@modern-js/plugin-rspress';
 import { testingPlugin } from '@modern-js/plugin-testing';
 
 export default defineConfig({
+  buildConfig: {
+    alias: {
+      '@': './src/',
+    },
+  },
   plugins: [
     moduleTools(),
     tailwindcssPlugin(),

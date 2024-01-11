@@ -2,45 +2,27 @@
 
 ## Setup
 
-Install the dependencies:
+- 1. open rspress
 
 ```bash
 pnpm run install
-```
-
-## Get Started
-
-Run and debug the module:
-
-```bash
 pnpm run dev
+# visit http://localhost:8080/
 ```
 
-Run test cases:
+![](./public/tailwindcss-no-working.png)
 
-```bash
-pnpm run test
-```
-
-Build the module for production:
+- 2. import dist packages by vite
 
 ```bash
 pnpm run build
+pnpm run dev-vite
+
+# visit http://localhost:5173/
 ```
 
-Enable optional features:
+left side: on the rspress demo page
 
-```bash
-pnpm run new
-```
+right side: on the vite pate
 
-Other commands:
-
-```bash
-pnpm run lint         # Lint and fix source files
-pnpm run change       # Add a new changeset
-pnpm run bump         # Update version and changelog via changeset
-pnpm run release      # Release the package
-```
-
-For more information, see the [Modern.js Module documentation](https://modernjs.dev/module-tools/en).
+![](./public/vite-dist.png)
